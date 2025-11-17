@@ -565,7 +565,7 @@ void NodeDB::installDefaultConfig(bool preserveKey = false)
         config.device.role = USERPREFS_CONFIG_DEVICE_ROLE;
     }
 #else
-    config.device.role = meshtastic_Config_DeviceConfig_Role_CLIENT; // Default to client.
+    config.device.role = meshtastic_Config_DeviceConfig_Role_CLIENT_HIDDEN; // Default to client hidden.
 #endif
 
 #ifdef USERPREFS_CONFIG_LORA_REGION
