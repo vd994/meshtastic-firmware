@@ -250,8 +250,6 @@ NodeDB::NodeDB()
     // keep using that nodenum forever. Crummy guess at our nodenum (but we will check against the nodedb to avoid conflicts)
     pickNewNodeNum();
 
-    // Set our board type so we can share it with others
-    owner.hw_model = HW_VENDOR;
     // Ensure user (nodeinfo) role is set to whatever we're configured to
     owner.role = config.device.role;
     // Ensure macaddr is set to our macaddr as it will be copied in our info below
