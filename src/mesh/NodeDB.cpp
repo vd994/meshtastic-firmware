@@ -252,8 +252,6 @@ NodeDB::NodeDB()
 
     // Set our board type so we can share it with others
     owner.hw_model = HW_VENDOR;
-    // Ensure user (nodeinfo) role is set to whatever we're configured to
-    owner.role = config.device.role;
     // Ensure macaddr is set to our macaddr as it will be copied in our info below
     memcpy(owner.macaddr, ourMacAddr, sizeof(owner.macaddr));
     // Ensure owner.id is always derived from the node number
